@@ -1,8 +1,9 @@
 -- PSDownload Database Schema
 -- Run this in Supabase SQL Editor for project: eogdtpkiwzlarllnxsrj
 
--- Enable UUID extension if needed
+-- Enable required extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS "pg_trgm";  -- Required for gin_trgm_ops
 
 -- Main content table
 CREATE TABLE IF NOT EXISTS public.psdownload (
