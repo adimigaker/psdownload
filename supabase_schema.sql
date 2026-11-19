@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS public.psdownload (
     duration TEXT,                                -- Duration string (e.g., "120 min", "2 seasons")
     studio TEXT,                                  -- Production studio
     director TEXT,                                -- Director name
-    cast TEXT,                                    -- Comma-separated cast
+    "cast" TEXT,                                  -- Comma-separated cast (quoted: reserved keyword)
     poster TEXT,                                  -- TMDB poster URL (w500)
     backdrop TEXT,                                -- TMDB backdrop URL (original)
     synopsis TEXT,                                -- Indonesian synopsis
